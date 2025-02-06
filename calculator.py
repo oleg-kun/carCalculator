@@ -4,7 +4,7 @@ from apis import get_gas_price, get_power_price
 class Calculator:
     def __init__(self, mileage=15000, years=3, year_loss=10):
         self.mileage = mileage
-        self.cars = {}
+        self.cars = {}              # Car: Year price
         self.years = years
         self.year_loss = year_loss / 100
 
@@ -55,4 +55,7 @@ class ElectricCar(Car):
 
     def dynamic_year_cost(self, mileage: int):
         return self.power_consumption * mileage / 1000 * get_power_price()
+
+def add_num(a, b):
+    return round(a / b, 2)
 

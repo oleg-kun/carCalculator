@@ -10,7 +10,7 @@ if __name__ == '__main__':
         calculator.ElectricCar("Tesla Model 3", 200000,fuel_economy=0, service_cost=0, insurances_cost=5500, power_consumption=150)
     )
     calc.add_car(
-        calculator.Car("Range Roverdsgg, 650000, 3, service_cost=3000, insurances_cost=7000)
+        calculator.Car("Range Rover", 650000, 3, service_cost=3000, insurances_cost=7000)
     )
     calc.add_car(
         calculator.Car("Audi", 770000, 3, service_cost=3000, insurances_cost=7000)
